@@ -5,7 +5,7 @@
 	</head>
 
 	<body>
-	//	<h1>BATTLESHIP</h1>
+		<h1>BATTLESHIP</h1>
 		<div id = "parent">
 			<div class="column" id = "button1"></div>
 			<div class="column" id = "button1">1</div>
@@ -124,18 +124,31 @@
 			var button49 = document.getElementById('button49');
 
 		 	var buttonArray = document.getElementsByClassName('button');
+			var gridArray = new Array(49);
+
+			for( let i = 0; i < buttonArray.length + 1; i++) {
+				gridArray[i] = false; 
+			}
+
+			for(let i = 0; i < 7; ++i) { //Place ships on the board
+				var number = prompt("Enter the position of your ship from 1 to 49", "");
+				gridArray[number] = true;
+			}
 
 			var reply_click = function()
 			{
-			  //  alert("Button clicked, id "+this.id+", text"+this.innerHTML);
+				if(gridArray[this.innerHTML] === false) { //miss
 					this.innerHTML = "X";
 					this.style.background = "red";
+				}else if(gridArray[this.innerHTML] === true) { //hit
+					this.innerHTML = "O";
+					this.style.background = "green";
+				}
 			}
 
 			for( let i = 0; i < buttonArray.length; i++) {
 				buttonArray[i].onclick = reply_click;
 			}
-
 
 
 		</script>
