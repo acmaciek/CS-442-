@@ -127,12 +127,23 @@
 			var gridArray = new Array(49);
 
 			for( let i = 0; i < buttonArray.length + 1; i++) {
-				gridArray[i] = false; 
+				gridArray[i] = false;
 			}
 
 			for(let i = 0; i < 7; ++i) { //Place ships on the board
-				var number = prompt("Enter the position of your ship from 1 to 49", "");
+				var number = prompt("Enter the position of your ship from 1 to 49 \n" + "Ships used: " + i + "/7" , "");
+				if (isNaN(number))
+  			{
+     			alert("Input must be a number");
+					i--;
+        }
+				if(gridArray[number] === true) {
+					alert("You already placed your ship in that position");
+					i--;
+				}
+				else{
 				gridArray[number] = true;
+				}
 			}
 
 			var reply_click = function()
