@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href="style.css">
+	</head>
+
+	<body>
+		<h1>BATTLESHIP</h1>
+		<div id = "parent">
+				<div class="button" id = "button1">1</div>
+				<div class="button" id = "button2">2</div>
+				<div class="button" id = "button3">3</div>
+				<div class="button" id="button4">4</div>
+				<div class="button" id="button5">5</div>
+				<div class="button" id="button6">6</div>
+				<div class="button" id="button7">7</div>
+				<div class="button" id="button8">8</div>
+				<div class="button" id="button9">9</div>
+				<div class="button" id="button10">10</div>
+				<div class="button" id="button11">11</div>
+				<div class="button" id="button12">12</div>
+				<div class="button" id="button13">13</div>
+				<div class="button" id="button13">14</div>
+				<div class="button" id="button15">15</div>
+				<div class="button" id="button16">16</div>
+				<div class="button" id="button17">17</div>
+				<div class="button" id="button18">18</div>
+				<div class="button" id="button19">19</div>
+				<div class="button" id="button20">20</div>
+				<div class="button" id="button21">21</div>
+				<div class="button" id="button22">22</div>
+				<div class="button" id="button23">23</div>
+				<div class="button" id="button24">24</div>
+				<div class="button" id="button25">25</div>
+				<div class="button" id="button26">26</div>
+				<div class="button" id="button27">27</div>
+				<div class="button" id="button28">28</div>
+				<div class="button" id="button29">29</div>
+				<div class="button" id="button30">30</div>
+				<div class="button" id="button31">31</div>
+				<div class="button" id="button32">32</div>
+				<div class="button" id="button33">33</div>
+				<div class="button" id="button34">34</div>
+				<div class="button" id="button35">35</div>
+				<div class="button" id="button36">36</div>
+				<div class="button" id="button37">37</div>
+				<div class="button" id="button38">38</div>
+				<div class="button" id="button39">39</div>
+				<div class="button" id="button40">40</div>
+				<div class="button" id="button41">41</div>
+				<div class="button" id="button42">42</div>
+				<div class="button" id="button43">43</div>
+				<div class="button" id="button44">44</div>
+				<div class="button" id="button45">45</div>
+				<div class="button" id="button46">46</div>
+				<div class="button" id="button47">47</div>
+				<div class="button" id="button48">48</div>
+				<div class="button" id="button49">49</div>
+		</div>
+		<script type="text/javascript">
+			var button1 = document.getElementById('button1');
+			var button2 = document.getElementById('button2');
+			var button3 = document.getElementById('button3');
+			var button4 = document.getElementById('button4');
+			var button5 = document.getElementById('button5');
+			var button6 = document.getElementById('button6');
+			var button7 = document.getElementById('button7');
+			var button8 = document.getElementById('button8');
+			var button9 = document.getElementById('button9');
+			var button10 = document.getElementById('button10');
+			var button11 = document.getElementById('button11');
+			var button12 = document.getElementById('button12');
+			var button13 = document.getElementById('button13');
+			var button14 = document.getElementById('button14');
+			var button15 = document.getElementById('button15');
+			var button16 = document.getElementById('button16');
+			var button17 = document.getElementById('button17');
+			var button18 = document.getElementById('button18');
+			var button19 = document.getElementById('button19');
+			var button20 = document.getElementById('button20');
+			var button21 = document.getElementById('button21');
+			var button22 = document.getElementById('button22');
+			var button23 = document.getElementById('button23');
+			var button24 = document.getElementById('button24');
+			var button25 = document.getElementById('button25');
+			var button26 = document.getElementById('button26');
+			var button27 = document.getElementById('button27');
+			var button28 = document.getElementById('button28');
+			var button29 = document.getElementById('button29');
+			var button30 = document.getElementById('button30');
+			var button31 = document.getElementById('button31');
+			var button32 = document.getElementById('button32');
+			var button33 = document.getElementById('button33');
+			var button34 = document.getElementById('button34');
+			var button35 = document.getElementById('button35');
+			var button36 = document.getElementById('button36');
+			var button37 = document.getElementById('button37');
+			var button38 = document.getElementById('button38');
+			var button39 = document.getElementById('button39');
+			var button40 = document.getElementById('button40');
+			var button41 = document.getElementById('button41');
+			var button42 = document.getElementById('button42');
+			var button43 = document.getElementById('button43');
+			var button44 = document.getElementById('button44');
+			var button45 = document.getElementById('button45');
+			var button46 = document.getElementById('button46');
+			var button47 = document.getElementById('button47');
+			var button48 = document.getElementById('button48');
+			var button49 = document.getElementById('button49');
+
+		 	var buttonArray = document.getElementsByClassName('button');
+
+			var reply_click = function()
+			{
+			  //  alert("Button clicked, id "+this.id+", text"+this.innerHTML);
+					this.innerHTML = "X";
+					this.style.background = "red";
+			}
+
+			for( let i = 0; i < buttonArray.length; i++) {
+				buttonArray[i].onclick = reply_click;
+			}
+
+
+
+		</script>
+	</body>
+</html>
